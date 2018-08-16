@@ -12,19 +12,19 @@ HTTP: Hypertext Transfer Protocol
 FTP: File Transfer Protocol
 
 
-Networking terminology: 
+###	Networking terminology: 
 	Client	
 	Server
 	Request
 	Response
 
 
-Client: Makes a request to a host computer.
-Host: Returns a response to the client.
+####	Client: Makes a request to a host computer.
+####	Host: Returns a response to the client.
 
 Server-side vs client-side
 
-HTTP
+####	HTTP
 Verbs and status codes
 	POST
 	GET	
@@ -52,7 +52,7 @@ i.e.: http://firebase.io/myuser/myShopperApp/mynode
 REST APIs make use of HTTP verbs and return JSON or XML 
 
 
-What is XML 
+####	What is XML 
 
 <node name=“Eggs”>
       <name>Eggs</name>
@@ -61,7 +61,7 @@ What is XML
       <date>2017-10-01 12:34:56 </date>
 </node>
 
-What is JSON (a lot easier read data interchange format)
+####	What is JSON (a lot easier read data interchange format)
 
 	{
 	  "node": {
@@ -85,15 +85,14 @@ The server response is returned by a session task as an NSData object.
 We then have to parse that using NSJSONSerialization.
 
 
-Threading
-
+####	Threading
 Networking in iOS
 Latency of networking requests depends on many factors. There is no way to know for sure when you’ll be done
 Don’t perform networking operations on the main thread, meaning don’t update the UI from a background thread
 When you start different requests, you can’t know the order in which they finish
 
-This is the link to the video we spoke of:
 
+This is the link to the video we spoke of:
 Beware online "filter bubbles" | Eli Pariser / Content Catering 
 https://www.youtube.com/watch?v=B8ofWFx525s
 
