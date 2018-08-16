@@ -1,10 +1,12 @@
+This morning we talked about networking in iOS as well as databases and server side matters. 
+
 ### NSURLSession
 Basics of networking (Communication between two computers)
 Protocols help organizing remote communications. 
 A Protocol is a rule that computers should adhere to if they wish to speak to one another.
 
 
-Protocols:
+###	Protocols:
 TCP/IP (Transmission Control Protocol / Internet Protocol) is the basic communication language or protocol of the Internet
 HTTP: Hypertext Transfer Protocol 
 FTP: File Transfer Protocol
@@ -87,7 +89,95 @@ Latency of networking requests depends on many factors. There is no way to know 
 Don’t perform networking operations on the main thread, meaning don’t update the UI from a background thread
 When you start different requests, you can’t know the order in which they finish
 
+Below is the example of the nested databases for the people in a room in both XML and JSON
+
+<people>
+	<n>
+		<a>
+			<person>
+				<name>nathan</name>
+				<t_color>gray</t_color>
+			</person>
+		</a>
+		….
+		<o>
+			<person>
+				<name>noah</name>
+				<t_color>red</t_color>
+			</person>
+		</o>
+
+	</n>
+	<person>
+		<name>jamie</name>
+		<t_color>black</t_color>
+	</person>
+	<person>
+		<name>kit</name>
+		<t_color>dark_gray</t_color>
+	</person>
+	<person>
+		<name>bennet</name>
+		<t_color>green</t_color>
+	</person>
+	<person>
+		<name>amir</name>
+		<t_color>cyan</t_color>
+	</person>
+</people>
 
 
-Finally
-https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/Introduction/Introduction.html
+This is the specific cluster where my user lives
+-> People -> a -> m -> i -> r (amir.
+
+
+
+
+JSON
+
+
+people: 
+{
+	person: 
+		[
+			name: amir
+			t_color: cyan
+		]
+	person: 
+		[
+			name: bennet
+			t_color: green
+		]
+	n:
+		[
+			a:
+				{
+					person:
+							[
+								name: nathan
+								t_color: gray
+							]
+					person:
+							[
+								name: nana
+								t_color: blue
+							]
+				}
+		]
+	person: 
+		[
+			name: john
+			t_color: transparent
+		]
+}
+
+
+
+This is the link to the video we spoke of:
+
+Beware online "filter bubbles" | Eli Pariser / Content Catering 
+https://www.youtube.com/watch?v=B8ofWFx525s
+
+
+Our word cloud is also in here:   ![alt text](https://github.com/AmirJahan/LHL---W03-D04/blob/master/Keywords%20W03-d04.png)
+
