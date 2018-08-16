@@ -53,6 +53,7 @@ REST APIs make use of HTTP verbs and return JSON or XML
 
 
 What is XML 
+
 <node name=“Eggs”>
       <name>Eggs</name>
       <quantity>12</quantity>
@@ -61,14 +62,15 @@ What is XML
 </node>
 
 What is JSON (a lot easier read data interchange format)
-{
-  "node": {
-    "name": "Eggs",
-    "quantity": “12",
-    "addedby": “Amir”,
-    "date": "2017-10-01 12:34:56"
-  }
-}
+
+	{
+	  "node": {
+	    "name": "Eggs",
+	    "quantity": “12",
+	    "addedby": “Amir”,
+	    "date": "2017-10-01 12:34:56"
+	  }
+	}
 
 JSON can contain:
     Arrays [1, 2, 3, 4]
